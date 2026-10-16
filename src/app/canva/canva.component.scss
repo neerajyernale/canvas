@@ -1,0 +1,44 @@
+
+
+.edit{
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: blueviolet;
+    min-height: 100vh;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.toolbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 9px 14px;
+    border: 1px solid  black;
+    background: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: red($color: #000000);
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="color"]{
+    width: 42px;
+    height: 30px;
+    cursor: pointer;
+}
+

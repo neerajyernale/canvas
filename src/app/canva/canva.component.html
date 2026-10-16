@@ -1,0 +1,27 @@
+
+<div class="edit">
+    <h2>Fabric.Js</h2>
+
+    <div class="toolbar">
+        <button (click)="addRectangle()">Rectangle</button>
+        <button (click)="addCircle()">Circle</button>        
+        <button (click)="addText()">Add Text</button>
+        <button (click)="deleteSelected()">Delete Selected</button>
+
+        <label>Fill Color
+            <input type="color"
+        (input)="changeColor($event)">
+        </label>
+
+        <button (click)="saveCanvas()">Save Json</button>
+        <button (click)="loadCanvas()">Load Json</button>
+        <button (click)="exportPng()">Export PNG</button>
+
+        
+    </div>
+    <div class="canvas-container">
+        <canvas #canvasElement></canvas>
+    </div>
+
+    <p>{{statusMessage}}</p>
+</div>
